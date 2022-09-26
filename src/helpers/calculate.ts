@@ -8,14 +8,12 @@ const calculate = (
   try {
     let newAction = action === 'x' ? '*' : action;
     let str = `${prevValue} ${newAction} ${currValue}`;
-    let result = eval(str);
-
-    return result.toString();
+    result = eval(str);
   } catch (e) {
     console.log(e);
   }
 
-  return result.toLocaleString('en');
+  return result.toString();
 };
 
 export {calculate};
