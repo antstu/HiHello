@@ -3,7 +3,7 @@ import {Text, View} from 'react-native';
 import styles from './CalculatorDisplay.styles';
 
 interface CalculatorDisplayProps {
-  displayValue: number;
+  displayValue: string;
 }
 
 const CalculatorDisplay = ({displayValue}: CalculatorDisplayProps) => {

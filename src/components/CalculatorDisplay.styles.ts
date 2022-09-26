@@ -5,7 +5,7 @@ export default StyleSheet.create({
     flex: 0.4,
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
-    width: '92.5%',
+    width: '85%',
   },
   calculationText: {
     color: 'lightgray',

@@ -6,7 +6,7 @@ import KeyboardButton from './KeyboardButton';
 
 interface CalculatorKeyboardProps {
   onPress: (type: string, text: string) => void;
-  operation: '';
+  operation: string;
 }
 
 const CalculatorKeyboard = ({onPress, operation}: CalculatorKeyboardProps) => {

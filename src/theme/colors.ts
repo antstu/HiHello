@@ -1,4 +1,4 @@
-interface ButtonColors {
+export interface ButtonColors {
   primary: string;
   secondary: string;
   tertiary: string;

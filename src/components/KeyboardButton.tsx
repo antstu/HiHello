@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import {SECONDARY} from '../constants/keyboard';
-import {BUTTON_COLORS} from '../theme/colors';
+import {ButtonColors, BUTTON_COLORS} from '../theme/colors';
 import styles from './KeyboardButton.styles';
 
 interface KeyboardButtonProps {
@@ -22,7 +22,9 @@ const KeyboardButton = ({
       style={[
         styles.container,
         {
-          backgroundColor: currentOperation ? 'white' : BUTTON_COLORS[type],
+          backgroundColor: currentOperation
+            ? 'white'
+            : BUTTON_COLORS[type as keyof ButtonColors],
         },
       ]}
       onPress={onPress}>
